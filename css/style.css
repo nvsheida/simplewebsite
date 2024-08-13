@@ -1,0 +1,470 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Handlee", cursive;
+}
+
+#banner{
+  background: linear-gradient(rgba(0,0,0.2,0.1),midnightblue),cadetblue;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.logo{
+  width: 140px;
+  position: absolute;
+  top: 4%;
+  left: 45%;
+}
+
+.banner-text{
+  text-align: center;
+  color: white;
+  padding-top: 180px;
+}
+
+.banner-text h1{
+  font-size: 130px;
+  font-family: "Protest Revolution", sans-serif;
+}
+
+.banner-text p{
+  font-size: 20px;
+  font-style: italic;
+  font-family: "Protest Riot", sans-serif;
+}
+
+.banner-btn{
+margin: 70px auto 0;
+}
+
+.banner-btn a{
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px;
+  color: white;
+  border: 0.5px solid white;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.banner-btn a span{
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.banner-btn a:hover span{
+  width:100%;
+}
+
+.banner-btn a:hover{
+  color: black;
+}
+
+/*Menu*/
+
+#sideNav{
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  right: -200px;
+  top: 0;
+  background: midnightblue;
+  z-index: 2;
+  transition: 0.5s;
+}
+nav ul li{
+  list-style: none;
+  margin: 50px 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+#menubtn{
+  width: 50px;
+  height: 50px;
+  background: midnightblue;
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  border-radius: 3px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+#menubtn i{
+  width: 20px;
+  margin-top: 15px;
+  color: white;
+}
+
+/*Game*/
+
+#game{
+  width: 100%;
+  padding: 70px 0;
+  background: linear-gradient(rgba(0,0,0.2,0.2),midnightblue),cadetblue;
+
+}
+
+.title-text{
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.title-text p{
+  margin: auto;
+  font-size: 100px;
+  color: #efefef;
+  font-family: "Protest Riot", sans-serif;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.title-text p:after{
+  content: '';
+  width: 50px;
+  height: 35px;
+  background: linear-gradient(cadetblue, white);
+  position: absolute;
+  top: -20px;
+  left: 0;
+  z-index: -1;
+  transform: rotate(10deg);
+  border-bottom-right-radius: 35px;
+  border-top-left-radius: 35px;
+}
+
+.title-text h1{
+  font-size: 50px;
+  font-family: "Protest Revolution", sans-serif;
+}
+
+.game-box{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.games{
+  flex-basis: 50%;
+}
+
+.games h1{
+  font-size: 40px;
+  font-family: "Protest Riot", sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.games h1:nth-child(2){
+  font-size: 50px;
+  padding-top: 80px;
+  padding-right: 110px;
+  font-family: "Handlee", cursive;
+  font-weight: bold;
+}
+
+.games p{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  font-size: 22px;
+  color: #efefef;
+}
+
+
+.games-img{
+  flex-basis: 50%;
+  margin: auto;
+}
+
+.games-img img{
+  width: 70%;
+}
+
+.games-btn{
+  margin: 20px auto 0;
+}
+
+.games-btn a{
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px;
+  color: black;
+  position: relative;
+  transition: 0.5s;
+}
+
+.games-btn a button{
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: aquamarine;
+  transition: 0.5s;
+}
+
+.games-btn a:hover button{
+  width:100%;
+}
+
+.games-btn a:hover{
+  color: white;
+}
+
+button{
+  background:cadetblue;
+}
+
+/*blocks*/
+
+.containerr{
+  background: linear-gradient(to bottom,white,midnightblue);
+  background-color: #7fa3ff;
+}
+.circles{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  /*background: rgba(255, 255, 255, 0.24);*/
+  bottom: -100px;
+  animation: animate 25s linear infinite;
+}
+
+.circles li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height:80px;
+}
+
+.circles img{
+  left: 25%;
+  width: 70px;
+  height:70px;
+}
+
+
+.circles li:nth-child(2){
+  left: 10%;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+  left: 70%;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+.circles li:nth-child(5){
+  left: 65%;
+}
+
+.circles li:nth-child(6){
+  left:75%;
+  width: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+  left: 35%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+  left: 50%;
+  width: 28px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+.circles li:nth-child(10){
+  left: 85%;
+  width: 100px;
+  height: 100px;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0%{
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100%{
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+/*news*/
+
+#news{
+  width: 100%;
+  padding: 70px 0;
+  background: linear-gradient(rgba(0,0,0.2,0.2),midnightblue),cadetblue;
+}
+
+.news-box{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.single-news{
+  flex-basis: 50%;
+  text-align: center;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: white;
+  position: relative;
+}
+
+.single-news img{
+  width: 30%;
+}
+
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 7px;
+  background: linear-gradient(rgba(0,0,0,0.5), darkgoldenrod);
+  opacity: 0;
+  transition: 1s;
+}
+
+
+
+.single-news:hover .overlay{
+  opacity: 1;
+}
+
+hr{
+  background: white;
+  height: 2px;
+  border: 0;
+  margin: 15px auto;
+  width: 60%;
+}
+
+.single-news p{
+  font-size: 14px;
+}
+
+/*Shop*/
+
+#Shop{
+  width: 100%;
+  padding: 70px 0;
+  background: linear-gradient(rgba(0,0,0.2,0.2),midnightblue),cadetblue;
+}
+
+.shop-box{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.single-shop{
+  flex-basis: 60%;
+  text-align: center;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: white;
+  position: relative;
+  display: flex;
+}
+
+.single-shop img{
+  width: 50%;
+}
+
+.Shopoverlay{
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  border-radius: 7px;
+  background: linear-gradient(rgba(0,0,0,0.5), darkgoldenrod);
+  opacity: 0;
+  transition: 1s;
+}
+
+.shop-item{
+  display: flex;
+  padding-right: 500px;
+}
+  .single-shop:hover .Shopoverlay{
+    opacity: 1;
+  }
+
+  hr{
+    background: white;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+  }
+
+  .single-shop p{
+    font-size: 22px;
+    padding-top: 10px;
+  }

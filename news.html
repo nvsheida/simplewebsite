@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Protest+Revolution&family=Protest+Riot&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>News</title>
+</head>
+<body>
+<!--Menu-->
+
+<div id="sideNav">
+  <nav>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Game.html">Game</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+      <li><a href="#">Letters</a></li>
+    </ul>
+  </nav>
+</div>
+<div id="menubtn">
+  <i class="fa-solid fa-bars" id="menu"></i>
+</div>
+<!--News-->
+
+<section id="news">
+  <div class="title-text">
+    <p>News</p>
+    <h1>What happend last night?</h1>
+  </div>
+
+  <div class="news-box">
+    <div class="single-news"><img src="img/Filled-Gryffindor.svg">
+      <div class="overlay">
+        <div class="news-desc">
+          <h1>Harry says</h1>
+          <hr>
+          <p>Welcome to the Hufflepuff house collection. We've gathered together everything Hufflepuff all in one place – just for you. Read about your favourite characters, peruse J.K. Rowling's writing, test your knowledge of your house in our quizzes and explore so much more.</p>
+        </div>
+      </div>
+    </div>
+    <div class="single-news"><img src="img/Filled-Hufflepuff.svg">
+      <div class="overlay"><div class="news-desc">
+        <h1>Sedric says</h1>
+        <hr>
+        <p>Welcome to the Hufflepuff house collection. We've gathered together everything Hufflepuff all in one place – just for you. Read about your favourite characters, peruse J.K. Rowling's writing, test your knowledge of your house in our quizzes and explore so much more.</p>
+      </div>
+      </div>
+    </div>
+    <div class="single-news"><img src="img/Filled-Ravenclaw.svg">
+      <div class="overlay">
+        <div class="news-desc">
+          <h1>Jake says</h1>
+          <hr>
+          <p>Welcome to the Ravenclaw house collection. We've gathered together everything Ravenclaw all in one place – just for you. Read about your favourite characters, peruse J.K. Rowling's writing, test your knowledge of your house in our quizzes and explore so much more.</p>
+        </div>
+      </div>
+    </div>
+    <div class="single-news"><img src="img/Filled-Slytherin.svg">
+      <div class="overlay">
+        <div class="news-desc">
+          <h1>Malphoy says</h1>
+          <hr>
+          <p>Slytherin all in one place – just fourite characters, peruse J.K. Rowling's writing, test your knowledge of your house in our quizzes and explore so much more.J.K. Rowling's writing, test your knowledge of your house in our quizzes and explore so much more.J.K. Rowling's writing, test your knowledge of your house in our quizzes and explore so much more.J.K. Rowling's writing, test your knowledge of your house in our quizzes and explore so much more.J.K. Rowling's writing, test your knowledge of your house in our quizzes and explore so much more.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Javascript-->
+
+<script>
+  var menubtn= document.getElementById("menubtn")
+  var menu= document.getElementById("menu")
+  var sidNav= document.getElementById("sideNav")
+  sideNav.style.right = "-200px"
+  menubtn.onclick= function(){
+    if(sideNav.style.right == "-200px") {
+      sidNav.style.right = "0"
+    } else {
+      sideNav.style.right = "-200px"
+    }
+  }
+</script>
+</body>
+</html>
